@@ -49,11 +49,11 @@ export default function Counter() {
           </div>
         </div>
 
-        <div className={styles.center}>
+
 
           <h1>Best Counter</h1> 
 
-        </div>
+          
 
         <div className={styles.grid}>
          <h2>
