@@ -11,10 +11,10 @@
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #d32343 0deg,
+    #f12793 55deg,
+    #b763a8 120deg,
+    #c20db933 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
@@ -40,18 +40,32 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+button{
+  background-color: #cf2e64;
+  color: #f7f7ff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --primary-glow: radial-gradient(rgba(255, 1, 234, 0.4), rgba(230, 1, 255, 0));
     --secondary-glow: linear-gradient(
       to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
+      rgba(217, 1, 255, 0),
+      rgba(200, 1, 255, 0),
+      rgba(255, 1, 124, 0.3)
     );
 
     --tile-start-rgb: 2, 13, 46;
@@ -105,3 +119,17 @@ a {
     color-scheme: dark;
   }
 }
+
+button:hover{
+  box-shadow: inset 600px 0 0 0 #ff748b;
+  transition: 500ms;
+
+}
+
+
+h1{
+  color: #000000;
+  font-size: 100;
+  text-shadow: 1px 1px 50px #fc416d, 1px 1px 10px #edf9ff;
+}
+

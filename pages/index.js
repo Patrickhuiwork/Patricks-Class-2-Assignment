@@ -40,6 +40,8 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
 
+        <h1>Best Counter</h1>
+
         <label>First Name:</label>
         <input
           type="text"
